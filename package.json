@@ -1,0 +1,39 @@
+{
+  "name": "react-redux-snippets",
+  "description": "React Redux snippets",
+  "version": "0.0.3",
+  "displayName": "React Redux Snippets",
+  "publisher": "code4mk",
+  "icon": "images/redux.png",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/code4mk/react-redux-snippets"
+  },
+  "engines": {
+    "vscode": "0.10.x"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "javascript",
+        "path": "./snippets/snippets.json"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/snippets.json"
+      },
+      {
+        "language": "javascriptreact",
+        "path": "./snippets/snippets.json"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./snippets/snippets.json"
+      }
+    ]
+  }
+}

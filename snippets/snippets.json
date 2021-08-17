@@ -1,0 +1,63 @@
+{
+  "redux__configure_store": {
+    "prefix": "rrdx_config",
+    "body": [
+      "import { configureStore } from '@reduxjs/toolkit'",
+      "//import ExampleReducer from '../store/ExampleSlice'",
+      "",
+      "export default configureStore({",
+      "    reducer: {",
+      "        // example: ExampleReducer",
+      "    }",
+      "})"
+    ],
+    "description": "redux__configure_store"
+  },
+  "redux__create_slice": {
+    "prefix": "rrdx_slice",
+    "body": [
+      "import { createSlice } from '@reduxjs/toolkit'",
+      "",
+      "export const ExampleSlice = createSlice({",
+      "    name: 'example',",
+      "    initialState: {",
+      "        auth: true",
+      "    },",
+      "    reducers: {",
+      "        authenticate: (state,action) => {",
+      "            state.isAuth = action.payload.auth",
+      "        }",
+      "    }",
+      "})",
+      "",
+      "// Action creators are generated for each case reducer function",
+      "export const { ",
+      "  authenticate",
+      " } = ExampleSlice.actions",
+      "",
+      "export default ExampleSlice.reducer"
+    ],
+    "description": "redux__create_slice"
+  },
+  "redux__import_selector_dispatch": {
+    "prefix": "rrdx_isd",
+    "body": [
+      "import { useSelector, useDispatch } from 'react-redux'"
+    ],
+    "description": "redux__import_selector_dispatch"
+  },
+  "redux__useSelector_implement": {
+    "prefix": "rrdx_selector",
+    "body": [
+      "useSelector(( state: any ) => state.${1:example})"
+    ],
+    "description": "redux__useSelector_implement"
+  },
+  "redux__useDispath_implement": {
+    "prefix": "rrdx_dispatch",
+    "body": [
+      "const dispatch = useDispatch()"
+    ],
+    "description": "redux__useDispath_implement"
+  }
+}
